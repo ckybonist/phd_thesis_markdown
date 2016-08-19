@@ -42,6 +42,19 @@ $endif$
   \ifxetex
     \usepackage{mathspec}
     \usepackage{xltxtra,xunicode}
+    \usepackage{xeCJK}
+    \usepackage{pdftexcmds}
+    \usepackage{catchfile}
+    \usepackage{ifluatex}
+    \usepackage{ifplatform}
+
+    \iflinux
+        \setCJKmainfont{AR PL UKai TW}
+    \else
+        \setCJKmainfont{BiauKai}
+    \fi
+
+    \setmainfont{Times New Roman}
   \else
     \usepackage{fontspec}
   \fi

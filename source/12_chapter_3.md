@@ -22,26 +22,38 @@ Comments can be added like this.
 
 ## Results
 
-Table \ref{ref_a_table} shows us how to add a table. Integer tincidunt sed nisl eget pellentesque. Mauris eleifend, nisl non lobortis fringilla, sapien eros aliquet orci, vitae pretium massa neque eu turpis. Pellentesque tincidunt aliquet volutpat. Ut ornare dui id ex sodales laoreet.
+Table \ref{table:mytable} shows us how to add a table. Integer tincidunt sed nisl eget pellentesque. Mauris eleifend, nisl non lobortis fringilla, sapien eros aliquet orci, vitae pretium massa neque eu turpis. Pellentesque tincidunt aliquet volutpat. Ut ornare dui id ex sodales laoreet.
 
 <!-- Force the table onto a newpage -->
 
 \newpage
 
----------------------------------------------------------------------------
-Column 1            Column 2                Column 3
---------------      -------------------     -------------------
-Row 1               0.1                     0.2
+\begin{table}[htbp]
+\small
+\setlength\tabcolsep{2pt}
 
-Row 2               0.3                     0.3
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+WAP 1 $\sim$ 520 & Longitude            & Latitude           & Floor & Building ID & Space ID & Relative Position  \\ \hline
+100, ...         & -0.06751662935071569 & 39.992756040740794 & 2     & 1           & 106      & 1                  \\ \hline
+-20, ...         & -0.0671950980614048  & 39.992792294109336 & 1     & 2           & 038      & 2                  \\ \hline
+\end{tabular}
 
-Row 3               0.4                     0.4      
+\vspace{5mm}
 
-Row 4               0.5                     0.6
+\begin{tabular}{|c|c|c|}
+\hline
+User ID & Phone ID & Timestamp  \\ \hline
+2       & 15       & 1380872703  \\ \hline
+4       & 13       & 138115054   \\ \hline
+\end{tabular}
 
----------------------------------------------------------------------------
+\caption[short table caption]{This table shows us how to add a table. Integer tincidunt sed nisl eget pellentesque. Mauris
+eleifend, nisl non lobortis fringilla, sapien eros aliquet orci, vitae pretium massa neque eu turpis. Pellentesque tincidunt
+aliquet volutpat. Ut ornare dui id ex sodales laoree}
+\label{table:mytable}
 
-Table: This is the table caption. Suspendisse blandit dolor sed tellus venenatis, venenatis fringilla turpis pretium. \label{ref_a_table}
+\end{table}
 
 
 ## Discussion

@@ -72,4 +72,7 @@ html:
 	mkdir "$(OUTPUTDIR)/source"
 	cp -r "$(INPUTDIR)/figures" "$(OUTPUTDIR)/source/figures"
 
+clean:
+	rm -rf output/*
+
 .PHONY: help pdf docx html tex
