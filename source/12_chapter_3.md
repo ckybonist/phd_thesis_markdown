@@ -27,7 +27,9 @@ Table \ref{table:mytable} shows us how to add a table. Integer tincidunt sed nis
 <!-- Force the table onto a newpage -->
 
 \newpage
+\input{source/tables/example_table}
 
+<!--
 \begin{table}[htbp]
 \small
 \setlength\tabcolsep{2pt}
@@ -54,6 +56,7 @@ aliquet volutpat. Ut ornare dui id ex sodales laoree}
 \label{table:mytable}
 
 \end{table}
+-->
 
 
 ## Discussion

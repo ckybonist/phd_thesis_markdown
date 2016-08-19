@@ -31,7 +31,7 @@ Figure \ref{fig:gal_gadot} shows how to add a figure. Donec ut lacinia nibh. Nam
 
 \begin{figure}
     \centering
-    \includegraphics{source/figures/example_figure.jpg}
+    \includegraphics{example_figure.jpg}
     \caption[Gal Gadot]{Calypso is a former British Royal Navy minesweeper converted into a research vessel for the oceanographic researcher Jacques-Yves Cousteau. It was equipped with a mobile laboratory for underwater field research.}
     \label{fig:gal_gadot}
 \end{figure}
